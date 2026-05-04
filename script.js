@@ -181,7 +181,7 @@ new docx.Paragraph(document.getElementById("p-lang").innerText)
 docx.Packer.toBlob(doc).then(blob=>{
 let a=document.createElement("a");
 a.href=URL.createObjectURL(blob);
-a.download="Eshal_CV.docx";
+a.download="CV.docx";
 a.click();
 });
 
