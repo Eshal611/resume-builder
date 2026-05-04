@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CV Builder</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://unpkg.com/docx@8.5.0/build/index.umd.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- FORM -->
+<div class="form">
+
+<h2>Resume Builder</h2>
+
+<input id="name" placeholder="Full Name">
+<input id="contact" placeholder="Dijkot | 0301-XXXXXXX | email">
+<input id="title" placeholder="Frontend Web Developer">
+
+<textarea id="summary" placeholder="Profile Summary"></textarea>
+
+<h3>Skills</h3>
+<div id="skillsBox"></div>
+<button onclick="addSkill()">+ Add Skill</button>
+
+<div id="techBox"></div>
+<button onclick="addTech()">+ Add Technical Skill</button>
+
+<div id="softBox"></div>
+<button onclick="addSoft()">+ Add Soft Skill</button>
+
+<h3>Education</h3>
+<input id="edu1" placeholder="BSIT - 1st Semester">
+<input id="edu2" placeholder="University Name">
+
+<h3>Languages</h3>
+<input id="languages" placeholder="English – Intermediate, Urdu – Fluent">
+
+<h3>Certifications</h3>
+<div id="certBox"></div>
+<button onclick="addCert()">+ Add Certification</button>
+
+<h3>Work Experience</h3>
+<div id="expBox"></div>
+<button onclick="addExp()">+ Add Experience</button>
+
+</div>
+
+<!-- PREVIEW -->
+<div class="cv" id="cv">
+
+<div class="header-row">
+  <div>
+    <h1 id="p-name">Eshal</h1>
+    <div id="p-title">Frontend Web Developer</div>
+  </div>
+  <div id="p-contact"></div>
+</div>
+
+<h3>Profile Summary</h3>
+<p id="p-summary"></p>
+
+<h3>Work Experience</h3>
+<div id="p-exp"></div>
+
+<h3>Skills</h3>
+<div id="p-skills"></div>
+
+<h3>Education</h3>
+<p id="p-edu"></p>
+
+<h3>Certifications</h3>
+<div id="p-cert"></div>
+
+<h3>Languages</h3>
+<div id="p-lang"></div>
+
+<button onclick="downloadWord()">Download CV</button>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
